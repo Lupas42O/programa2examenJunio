@@ -71,13 +71,13 @@ public class PlantaDAO {
 		List<Planta> plantas = null;
 		try (Session session=HibernateUtil.getSessionFactory().openSession()){
 			transaction = session.beginTransaction();
-			plantas = session.createQuery("from Parking", Planta.class).getResultList();
-			session.remove(p);
+			plantas = session.createQuery("from Planta", Planta.class).getResultList();
 			transaction.commit();
 		}catch (Exception e) {
 			if (transaction != null) {
 				transaction.rollback();
 			}
 		}
+		return plantas;
 	}
 }

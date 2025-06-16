@@ -19,7 +19,7 @@ public class HibernateUtil {
 					
 					Properties settings = new Properties();
 					settings.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
-					settings.put(Environment.URL,"jdbc:mysql://localhost:3307/parking");
+					settings.put(Environment.URL,"jdbc:mysql://127.0.0.1:3307/parking");
 					settings.put(Environment.USER,"alumno");
 					settings.put(Environment.PASS,"Skylanders1");
 					settings.put(Environment.SHOW_SQL, "true");

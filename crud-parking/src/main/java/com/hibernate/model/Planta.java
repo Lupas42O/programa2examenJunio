@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table (name="parking")
+@Table (name="plazas")
 public class Planta {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
@@ -16,7 +16,7 @@ public class Planta {
 	int id;
 	@Column (name="planta")
 	int numplanta;
-	@Column (name="plazas")
+	@Column (name="plazasLibres")
 	int plazas;
 	
 	public Planta() {
